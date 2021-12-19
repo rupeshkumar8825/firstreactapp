@@ -1,17 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// in this we will make our own app using the react app
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <>
+    <nav className="navbar">
+      <ul className="navigation">
+        <li>
+          <a href="#">Textutils</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
+      </ul>
+
+      {/* also we have to include the search bar at the end of this  */}
+      <div className="searchbar">
+        <input type="text" className="searchbox" placeholder="Search here" />
+        <button>Search</button>
+      </div>
+    </nav>
+  </>,
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+console.log("everything went fine");

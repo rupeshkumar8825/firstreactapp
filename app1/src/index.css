@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* writing the css for the navbar for the learning purpose  */
+.navbar {
+  border: 2px solid black;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navigation {
+  border: 2px solid red;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation li {
+  margin-left: 30px;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  border: 1px solid red;
+  font-size: 1.2rem;
+}
+
+/* designing the searchbar  */
+.searchbar {
+  width: 30%;
+  border: 2px solid green;
+  padding: 5px;
+}
+
+.searchbox {
+  /* width: 100%; */
+  height: 20px;
+  text-align: center;
+}
+
+.searchbar button {
+  border: 2px solid green;
+  color: green;
+  padding: 5px;
 }
