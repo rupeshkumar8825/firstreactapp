@@ -8,9 +8,12 @@ function App() {
   // say everything went fine
   return (
     <>
-      <Navbar title="rupesh kumar"></Navbar>
+      <Navbar title="RUPESH"></Navbar>
       {/* adding the textarea for the application to be created here using the react and css and the javascript for the learning purpose  */}
-      <Textform title="Enter the text below"></Textform>
+      {/* putting the textform inside the container which is the bootstrap class for this purpose  */}
+      <div className="container my-3">
+        <Textform heading="Enter the text to analyze"></Textform>
+      </div>
     </>
   );
 }
